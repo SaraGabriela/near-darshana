@@ -119,11 +119,11 @@ npm install near-cli -g
 
 ## Roadmap
 
-- Proposed Standard to store information on every chain 
-- Setup NFTs multichain explorer
-- Setup incentive for people to contribute on descriptions
-- Propose other platforms to include that capability
-
+- Test integration with Darshana's platform: Wallet and signing
+- Deploy integration and bouties dashboard
+- Test user experience, integrate feedback
+- New releases
+- 
 See the [open issues](https://github.com/SaraGabriela/near-darshana/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
