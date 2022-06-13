@@ -32,7 +32,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SaraGabriela/near-darshana">
-    <img src="ds-isotipo_white.png" alt="NEAR">
+    <img src="ds-isotipo_white.png" width="200" height="200">
   </a>
 
 <h3 align="center">NEAR Implementation - Darshana</h3>
