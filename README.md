@@ -1,6 +1,6 @@
 # near-darshana
 <div id="top"></div>
-<!-- https://examples.near.org/wallet-example
+<!-- 
 *** USED BEST README Template so leaving the references - ngil 05/26/2022
 /*** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -32,7 +32,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SaraGabriela/near-darshana">
-    <img src="images/nftb.png" alt="NEAR">
+    <img src="ds-isotipo_white.png" alt="NEAR">
   </a>
 
 <h3 align="center">NEAR Implementation - Darshana</h3>
@@ -80,25 +80,15 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Darshana is expanding its multichain support to integrate more wallets and protocols and include more web3 user ecosystems, thus, users. Our aim to work with protocols aligned to our mision and vision tooks us to NEAR.
 <img src="images/screen1.png">
 
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-<b>Problem</b><br>
-Currently, the NFT market is been focused on the creation and trading of graphic (static or animated, sound based) art.<br>
-
-That leaves behind a great number of people with disabilities that cannot get the information of what the pieces of art are about, thus, cannot complete their research to be part of this ecosystem.<br>
-
-Other people supporting them can be helpful, but we should consider a standard to include on the information inherent to the NFT<br>
-
-<b>Solution</b><br>
-Setup a multi-chain interface explorer, if marketplaces, sites or apps do not have it implemented. A reusable component to read those additional attributes from all the chains, it is agnostic as far as the standard field to read is defined on each chain’s explorer interface (tested with ton.sh #API explorer, solana, etherscan, algoexplorer, polysgoncan and harmony explorer)
-<img src="images/screen2.png">
-  
- Once the standard is well known, people receive incentive to complete the description for the NFTs <br>
-… yes that’s tokens for that bounty—this should need graceful sponsors committed to diversity to fund!<br>
+<b>Implementation</b><br>
+We want to integrate 3 things from our platform:
+1. NEAR Wallet support, as an identity
+2. Signing for important transactions: job acceptance
+3. Rewards for bounties alined to peer-to-peer collaboration
 
 
 See demo
@@ -106,14 +96,8 @@ See demo
 
 ### Built With
 
-* [ton.sh #API]
-* [web3.js]
-* [Moralis]
-* [IPFS]
-* [ENS]
 * [JavaScript]
 *
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -122,7 +106,7 @@ See demo
 <!-- GETTING STARTED -->
 ## Getting Started
 
-We are using APIs and some libraries
+We need to setup the environment and the pre-requisites
 
 ### Prerequisites
 
