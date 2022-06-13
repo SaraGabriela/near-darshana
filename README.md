@@ -81,8 +81,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 Darshana is expanding its multichain support to integrate more wallets and protocols and include more web3 user ecosystems, thus, users. Our aim to work with protocols aligned to our mision and vision tooks us to NEAR.
-<img src="images/screen1.png">
-
 
 <b>Implementation</b><br>
 We want to integrate 3 things from our platform:
@@ -92,7 +90,7 @@ We want to integrate 3 things from our platform:
 
 
 See demo
-[![TNFTs Demo](https://github.com/ratalie/TransparentNFTs/blob/0342abff3af994230fc0ec0e6b3f4c7a090ccd0e/images/F8FE1110-B641-41AA-B47C-F17900518F45.jpeg)](https://www.youtube.com/watch?v=l7aMUnG0KlU "Demo")
+[![TNFTs Demo](https://F8FE1110-B641-41AA-B47C-F17900518F45.jpeg)](https://www.youtube.com/watch?v=l7aMUnG0KlU "Demo")
 
 ### Built With
 
@@ -110,30 +108,14 @@ We need to setup the environment and the pre-requisites
 
 ### Prerequisites
 
-### Node
-npm install web3
 ### Yarn
-yarn add web3
-### Moralis
-Webpack v5
-We highly recommend you to use the stable 4.0.3 version of Webpack. If you want to use Moralis on your project with Webpack v5 you need to add the fallback to your webpack.config.js file:
+Install dependencies
+yarn --frozen-lockfile
+### NEAR
+check if installed: near --version
+Otherwise install near-cli:
 
-module.exports = {
-    resolve: {
-        fallback: {
-            assert: require.resolve('assert'),
-            crypto: require.resolve('crypto-browserify'),
-            http: require.resolve('stream-http'),
-            https: require.resolve('https-browserify'),
-            os: require.resolve('os-browserify/browser'),
-            stream: require.resolve('stream-browserify'),
-        },
-    },
-};
-
-const Moralis = require('moralis');
-// ES6 Minimized
-import Moralis from 'moralis/dist/moralis.min.js';
+npm install near-cli -g
 
 ## Roadmap
 
@@ -142,7 +124,7 @@ import Moralis from 'moralis/dist/moralis.min.js';
 - Setup incentive for people to contribute on descriptions
 - Propose other platforms to include that capability
 
-See the [open issues](https://github.com/ratalie/TransparentNFTs/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/SaraGabriela/near-darshana/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -178,9 +160,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@ratalie](https://twitter.com/ratalie)  
+Your Name - Sara, Natalie [@ratalie](https://twitter.com/ratalie)  
 
-Project Link: [https://github.com/ratalie/TransparentNFTs](https://github.com/ratalie/TransparentNFTs)
+Project Link: [https://github.com/SaraGabriela](https://github.com/SaraGabriela)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
