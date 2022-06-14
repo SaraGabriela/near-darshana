@@ -95,7 +95,9 @@ See demo
 ### Built With
 
 * [JavaScript]
-*
+* [TypeScript]
+* [CSS] 
+* [SASS]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
