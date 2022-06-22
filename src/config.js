@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || 'wallet-example'; /* TODO: fill this in! */
+const CONTRACT_NAME = process.env.CONTRACT_NAME || 'sara_testtt.testnet'; /* TODO: fill this in! */
 
 function getConfig (env) {
   switch (env) {
