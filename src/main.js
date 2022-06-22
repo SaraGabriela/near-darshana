@@ -58,16 +58,26 @@ function signedOutFlow() {
 
 // Main function for the signed-in flow (already authorized by the wallet).
 function signedInFlow() {
+  
   // Displaying the signed in flow container.
   Array.from(document.querySelectorAll('.signed-in')).forEach(el => el.style.display = '');
 
   // Displaying current account name.
-  document.getElementById('account-id').innerText = window.accountId;
+  const userName = document.getElementById('account-id');
+  userName.innerText = window.accountId;
+  const parentName = userName.parentNode;
+  parentName.innerHTML = parentName.innerHTML.replace('Sign In', 'Signed in as');
+  console.log("se modificaa " + parentName.textContent);
+
+  //Hide login
+  Array.from(document.querySelectorAll('.hide')).forEach(el => el.style.display = 'none');
 
   // Adding an event to a say-hi button.
   document.getElementById('say-hi').addEventListener('click', () => {
     // We call say Hi and then update who said Hi last.
     window.contract.sayHi().then(updateWhoSaidHi);
+
+  
   });
 
   // Adding an event to a sing-out button.
@@ -77,10 +87,13 @@ function signedInFlow() {
     // Forcing redirect.
     window.location.replace(window.location.origin + window.location.pathname);
   });
-
+  
   // fetch who last said hi without requiring button click
   // but wait a second so the question is legible
+
+  //updateWhoSaidHi();
   setTimeout(updateWhoSaidHi, 1000);
+  console.log("hay refresh ");
 }
 
 // Function to update who said hi
@@ -97,10 +110,11 @@ function updateWhoSaidHi() {
     if (who) {
       el.href = 'https://explorer.testnet.near.org/accounts/' + who;
     }
-
     // change the ? to a !
     const parent = el.parentNode;
+
     parent.innerHTML = parent.innerHTML.replace('?', '!');
+    console.log("se modifica " + parent.textContent);
   });
 }
 

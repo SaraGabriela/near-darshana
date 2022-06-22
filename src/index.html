@@ -3,22 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <!--<link rel="stylesheet" href="styles.css">-->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1><a id="who" target="_blank">Who</a> was the last person to say hi?</h1>
+  <!--<h1><a id="who" target="_blank">Who</a> was the last person to say hi?</h1>
   <button id="sign-in" class="signed-out" style="display: none">
     Sign in with NEAR to find out!
-  </button>
-  <button id="say-hi" class="signed-in" style="display: none">
-    Say hi!
-  </button>
+  </button>-->
+
+  <div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('images/login-bg.jpg');"></div>
+    <div class="contents order-2 order-md-1">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <div class="row align-items-center justify-content-left">
+              <img class="mb-5" src="images/logo.svg"/>
+            </div>
+            <div class="row align-items-center justify-content-center">
+              <h1 style="color: #9c9e4b; font-weight: 900">Sign In <a id="account-id" href="https://wallet.testnet.near.org/profile" target="_blank"></a></h1>
+              <p class="mb-4 hide" style="color: #1a3447;">And discover opportunities for your career</p>
+              <form action="#" method="post" class="hide">
+                <div class="form-group first">
+                  <label for="username">Email</label>
+                  <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+                </div>
+                <div class="form-group last mb-3">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" placeholder="Your Password" id="password">
+                </div>
+                
+                <div class="d-flex mb-5 align-items-center">
+                  <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                    <input type="checkbox" checked/>
+                    <div class="control__indicator"></div>
+                  </label>
+                  <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+                </div>
+
+                <input type="submit" value="Log In" class="btn btn-block" style="background-color: #1a3447 !important; color:#fff !important;">
+          
+              </form>
+              <h1 style="display: none;"><a  target="_blank">Who</a> was the last person to say hi?</h1>
+              <button id="sign-in" class="btn btn-primary signed-out mt-4" style="display: none">
+                Sign in with NEAR
+              </button>
+
+              <div class="card signed-in" style="width: 18rem; display: none">
+                <div class="card-body">
+                  <h5 class="card-title">Job title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Job description</h6>
+                  <p class="card-text mt-1" style="color:#000 !important;">The last person to apply was <strong id="who">who</strong></p>
+                  <a href="#" class="card-link" id="say-hi">Apply to job</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
   <footer>
     <p class="signed-in" style="display: none">
-      Signed in as <a id="account-id" href="https://wallet.testnet.near.org/profile" target="_blank"></a>
+      Signed in as <a href="https://wallet.testnet.near.org/profile" target="_blank"></a>
       • <a href="#signout" id="sign-out">sign out</a>
     </p>
   </footer>
-  <script src="./main.js"></script>
+  
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="./main.js"></script>
 </body>
 </html>
