@@ -80,7 +80,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Darshana is expanding its multichain support to integrate more wallets and protocols and include more web3 user ecosystems, thus, users. Our aim to work with protocols aligned to our mision and vision tooks us to NEAR.
+Darshana is expanding its multichain support to integrate more wallets and protocols and include more web3 user ecosystems, thus, users. Our aim to work with protocols aligned to our mision and vision tooks us to NEAR. See the Gitpod source here: https://gitpod.io#snapshot/d7834e10-edb6-49dd-8d70-7604104ee5e3
 
 <b>Implementation</b><br>
 We want to integrate 3 things from our platform:
