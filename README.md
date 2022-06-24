@@ -90,7 +90,7 @@ We want to integrate 3 things from our platform:
 
 
 See demo
-[![TNFTs Demo](https://F8FE1110-B641-41AA-B47C-F17900518F45.jpeg)](https://www.youtube.com/watch?v=l7aMUnG0KlU "Demo")
+[![Demo](demonear.png)](https://youtu.be/Bjmla_yhOaE)
 
 ### Built With
 
