@@ -89,7 +89,7 @@ We want to integrate 3 things from our platform:
 3. Rewards for bounties alined to peer-to-peer collaboration
 
 
-See demo
+See demo (click image below or follow link: https://youtu.be/Bjmla_yhOaE)
 [![Demo](demonear.png)](https://youtu.be/Bjmla_yhOaE)
 
 ### Built With
