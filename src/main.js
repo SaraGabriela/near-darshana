@@ -23,7 +23,7 @@ async function initContract() {
     // View methods are read only. They don't modify the state, but usually return some value.
     viewMethods: ['whoSaidHi'],
     // Change methods can modify the state. But you don't receive the returned value when called.
-    changeMethods: ['sayHi'],
+    changeMethods: ['applyToJob', 'validateJob' ],
     // Sender is the account ID to initialize transactions.
     sender: window.accountId,
   });
@@ -65,17 +65,28 @@ function signedInFlow() {
   // Displaying current account name.
   const userName = document.getElementById('account-id');
   userName.innerText = window.accountId;
-  const parentName = userName.parentNode;
-  parentName.innerHTML = parentName.innerHTML.replace('Sign In', 'Signed in as');
-  console.log("se modificaa " + parentName.textContent);
+  //const parentName = userName.parentNode;
+ // parentName.innerHTML = parentName.innerHTML.replace('Sign In', 'Signed in as');
+  console.log("se modificaa " + userName.textContent);
 
   //Hide login
   Array.from(document.querySelectorAll('.hide')).forEach(el => el.style.display = 'none');
 
+  //Full width
+  Array.from(document.querySelectorAll('.contents')).forEach(el => el.style.width = '100%');
+
   // Adding an event to a say-hi button.
   document.getElementById('say-hi').addEventListener('click', () => {
     // We call say Hi and then update who said Hi last.
-    window.contract.sayHi().then(updateWhoSaidHi);
+    window.contract.applyToJob().then(updateWhoSaidHi);
+
+  
+  });
+
+  //Adding an event to a validate button.
+  document.getElementById('validate').addEventListener('click', () => {
+    // We call say Hi and then update who said Hi last.
+    window.contract.validateJob().then(showContractInfo());
 
   
   });
@@ -116,6 +127,10 @@ function updateWhoSaidHi() {
     parent.innerHTML = parent.innerHTML.replace('?', '!');
     console.log("se modifica " + parent.textContent);
   });
+}
+
+function showContractInfo(){
+  console.log("Se muestra info de contrato");
 }
 
 // Loads nearAPI and this contract into window scope.
