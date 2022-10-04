@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "jquery": "^3.6.0",
-    "near-api-js": "^0.43.1",
+    "near-api-js": "^1.1.0",
     "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.9"
   },
